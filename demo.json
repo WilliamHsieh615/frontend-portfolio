@@ -178,19 +178,20 @@
                 "repoUrl": "https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project3-2"
             },
             {
-                "name": "todolist",
-                "description": "",
+                "name": "待辦事項清單",
+                "description": "一個待辦事項管理工具，用 Vue 3（Composition API + Options API）、Bootstrap 5，以及 localStorage 做資料持久化。可新增、編輯、刪除事項，頁面重新整理後資料還在",
                 "technology": [
                     "Vue 3 (Composition API)",
                     "Vue 3 (Options API)",
-                    "Bootstrap 5"
+                    "Bootstrap 5",
+                    "localStorage"
                 ],
                 "previewUrl": "https://williamhsieh615.github.io/frontend-portfolio/Project3-3/index.html",
                 "repoUrl": "https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project3-3"
             },
             {
                 "name": "3C 商城",
-                "description": "使用emit與props",
+                "description": "主要練習 emit 與 props 的資料傳遞與事件觸發。使用 Vue 3 + Axios + Bootstrap + JSON，實現商品列表、加入購物車、購物車總價計算、通知提示等功能",
                 "technology": [
                     "Vue 3 (Composition API)",
                     "Axios",
@@ -202,7 +203,7 @@
             },
             {
                 "name": "香香餅乾舖",
-                "description": "使用 Pinia，商品與購物車狀態管理",
+                "description": "使用 Pinia 做全域狀態管理，前端用 Vue 3 + Composition API 建構。能管理商品與購物車清單，動態顯示商品、更新數量、刪除品項等功能",
                 "technology": [
                     "Vue 3 (Composition API)",
                     "Pinia",
