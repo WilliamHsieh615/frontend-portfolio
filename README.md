@@ -25,7 +25,9 @@
 |------|-----------|--------------------------------------------------|-------------------------------------------|------------------|-------------------|
 | 1 | 餅乾庫存管理系統 | 一個以 Vue 3 建構的前端庫存管理介面，動態載入餅乾商品資料，並可即時調整庫存與商品資訊，支援編輯與確認模式切換 | Vue 3 (Composition API)、Axios、Bootstrap 5、JSON | [🔗 作品](https://williamhsieh615.github.io/frontend-portfolio/Project3-1/index.html) | [🔗 原始碼](https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project3-1) |
 | 2 | 會員狀態管理 | 以 Vue 3 建構的會員登入/註冊介面，支援 email 驗證、密碼顯示切換與登入狀態維護，並可透過 cookie 管理會員身份，前端動態顯示會員資訊與登出功能 | Vue 3 (Composition API)、Axios、Bootstrap 5、SweetAlert2、Cookie | [🔗 作品](https://williamhsieh615.github.io/frontend-portfolio/Project3-2/index.html) | [🔗 原始碼](https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project3-2) |
-| 3 | 3C 商城 | 這是一個以 Vue 3 建構的 3C 商品購物車介面，支援加入商品、調整數量與即時總金額計算。 | Vue 3 (Composition API)、Axios、Bootstrap 5、JSON | [🔗 作品](https://williamhsieh615.github.io/frontend-portfolio/Project3-3/index.html) | [🔗 原始碼](https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project3-3) |
+| 3 | 待辦事項清單 | 一個待辦事項管理工具，用 Vue 3（Composition API + Options API）、Bootstrap 5，以及 localStorage 做資料持久化。可新增、編輯、刪除事項，頁面重新整理後資料還在 | Vue 3 (Composition API)、Vue 3 (Options API)、Bootstrap 5、localStorage | [🔗 作品](https://williamhsieh615.github.io/frontend-portfolio/Project3-3/index.html) | [🔗 原始碼](https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project3-3) |
+| 4 | 3C 商城 | 主要練習 emit 與 props 的資料傳遞與事件觸發。使用 Vue 3 + Axios + Bootstrap + JSON，實現商品列表、加入購物車、購物車總價計算、通知提示等功能 | Vue 3 (Composition API)、Axios、Bootstrap 5、JSON | [🔗 作品](https://williamhsieh615.github.io/frontend-portfolio/Project3-4/index.html) | [🔗 原始碼](https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project3-4) |
+| 5 | 香香餅乾舖 | 使用 Pinia 做全域狀態管理，前端用 Vue 3 + Composition API 建構。能管理商品與購物車清單，動態顯示商品、更新數量、刪除品項等功能 | Vue 3 (Composition API)、Pinia、Axios、Bootstrap 5、JSON | [🔗 作品](https://williamhsieh615.github.io/frontend-portfolio/Project3-5/index.html) | [🔗 原始碼](https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project3-5) |
 
 
 
