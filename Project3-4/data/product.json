@@ -1,0 +1,58 @@
+[
+    {   
+        "id": 1,
+        "name": "耳罩式藍牙耳機",
+        "description": "支援藍牙 5.0，長效電池續航達 30 小時，舒適耳墊適合長時間使用。",
+        "price": 2490,
+        "imageUrl": "./image/product1.jpg"
+    },
+    {   
+        "id": 2,
+        "name": "電競鍵盤組",
+        "description": "RGB 背光機械式鍵盤搭配人體工學滑鼠，專為遊戲玩家設計。",
+        "price": 3290,
+        "imageUrl": "./image/product2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "智慧型手錶",
+        "description": "支援心率偵測、睡眠監測與多種運動模式，防水設計適合日常與運動使用。",
+        "price": 4990,
+        "imageUrl": "./image/product3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "機械式鍵盤",
+        "description": "青軸手感清脆，支援全鍵無衝突設計，耐用高達 5000 萬次敲擊。",
+        "price": 2890,
+        "imageUrl": "./image/product4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "耳罩式電競耳機",
+        "description": "7.1 聲道環繞音效，搭配可拆式降噪麥克風，提升遊戲臨場感。",
+        "price": 1990,
+        "imageUrl": "./image/product5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "智慧型降噪藍牙耳機",
+        "description": "主動降噪技術，環境音模式切換，適合通勤與辦公使用。",
+        "price": 3690,
+        "imageUrl": "./image/product6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "文書型智慧滑鼠",
+        "description": "低功耗藍牙連線，支援多裝置切換，輕巧設計適合辦公與學習。",
+        "price": 990,
+        "imageUrl": "./image/product7.jpg"
+    },
+    {   
+        "id": 8,
+        "name": "智慧型耳罩式耳機",
+        "description": "結合智慧語音助理與高音質單體，支援觸控操作與快充。",
+        "price": 3290,
+        "imageUrl": "./image/product8.jpg"
+    }
+]

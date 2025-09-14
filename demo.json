@@ -178,16 +178,40 @@
                 "repoUrl": "https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project3-2"
             },
             {
+                "name": "todolist",
+                "description": "",
+                "technology": [
+                    "Vue 3 (Composition API)",
+                    "Vue 3 (Options API)",
+                    "Bootstrap 5"
+                ],
+                "previewUrl": "https://williamhsieh615.github.io/frontend-portfolio/Project3-3/index.html",
+                "repoUrl": "https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project3-3"
+            },
+            {
                 "name": "3C 商城",
-                "description": "這是一個以 Vue 3 建構的 3C 商品購物車介面，支援加入商品、調整數量與即時總金額計算。",
+                "description": "使用emit與props",
                 "technology": [
                     "Vue 3 (Composition API)",
                     "Axios",
                     "Bootstrap 5",
                     "JSON"
                 ],
-                "previewUrl": "https://williamhsieh615.github.io/frontend-portfolio/Project3-3/index.html",
-                "repoUrl": "https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project3-3"
+                "previewUrl": "https://williamhsieh615.github.io/frontend-portfolio/Project3-4/index.html",
+                "repoUrl": "https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project3-4"
+            },
+            {
+                "name": "香香餅乾舖",
+                "description": "使用 Pinia，商品與購物車狀態管理",
+                "technology": [
+                    "Vue 3 (Composition API)",
+                    "Pinia",
+                    "Axios",
+                    "Bootstrap 5",
+                    "JSON"
+                ],
+                "previewUrl": "https://williamhsieh615.github.io/frontend-portfolio/Project3-5/index.html",
+                "repoUrl": "https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project3-5"
             }
         ]
     }

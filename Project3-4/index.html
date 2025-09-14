@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3C商城</title>
+
+    <!-- Vue 3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.21/vue.global.prod.js"></script>
+
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body style="background: #f2f2f2f2;">
+
+    <div id="app" class="container py-4">
+        <div class="row">
+            <!-- 商品列表區 -->
+            <product-list-component :products="products" @add-to-cart="addToCart"></product-list-component>
+
+            <!-- 購物車區 -->
+            <cart-component :cart="cart" :total-price="totalPrice" @remove-product="removeProduct"
+                @checkout="checkout"></cart-component>
+        </div>
+
+        <!-- 通知元件 -->
+        <notification-component :toasts="toasts"></notification-component>
+    </div>
+
+    <script type="module">
+
+        const { createApp, ref, onMounted, computed } = Vue;
+
+        import ProductListComponent from './components/ProductListComponent.js';
+        import CartComponent from './components/CartComponent.js';
+        import NotificationComponent from './components/NotificationComponent.js';
+
+        const app = createApp({
+            components: {
+                ProductListComponent,
+                CartComponent,
+                NotificationComponent
+            },
+            setup() {
+
+                const products = ref([]);
+                const cart = ref([]);
+                const toasts = ref([]);
+
+                onMounted(() => {
+
+                    axios.get("./data/product.json")
+                        .then(result => {
+                            console.log(result.data);
+                            products.value = result.data;
+                        }).catch(error => {
+                            console.log("no data", error);
+                        });
+
+                });
+
+                const addToCart = (product) => {
+                    let found = false;
+
+                    cart.value.forEach(item => {
+                        if (item.productItem.id === product.id) {
+                            item.count++;
+                            item.subtotal = item.count * item.productItem.price;
+                            found = true;
+                        }
+                    });
+
+                    if (!found) {
+                        cart.value.push({
+                            productItem: product,
+                            count: 1,
+                            subtotal: product.price
+                        });
+                    }
+
+                    console.log(cart);
+
+                    const message = `您已將 ${product.name} 加入購物車`;
+                    toasts.value.push(message);
+
+                    setTimeout(() => {
+                        toasts.value.shift();
+                    }, 3000);
+
+                }
+
+                const removeProduct = (item, i) => {
+                    cart.value.splice(i, 1);
+
+                    const message = `您已將 ${item.productItem.name} 移除購物車`;
+                    toasts.value.push(message);
+
+                    setTimeout(() => {
+                        toasts.value.shift();
+                    }, 3000);
+                }
+
+                const totalPrice = computed(() => {
+
+                    let total = 0
+
+                    cart.value.forEach(item => {
+                        total += item.subtotal
+                    })
+
+                    return total
+                });
+
+                const checkout = () => {
+                    alert("結帳成功！！");
+                    cart.value = [];
+                }
+
+                return { products, cart, toasts, addToCart, removeProduct, checkout, totalPrice };
+            }
+        }).mount('#app');
+
+    </script>
+
+</body>
+
+</html>

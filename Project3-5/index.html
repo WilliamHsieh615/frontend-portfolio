@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香香餅乾舖</title>
+
+    <!-- Vue 3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.21/vue.global.prod.js"></script>
+
+    <!-- Pinia -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-demi/0.13.11/index.iife.js"></script>
+    <!-- VueDemi，Pinia 必要的相依套件 -->
+    <script>const I = VueDemi; const vueDemi = VueDemi;</script>
+    <!-- Pinia 網頁版-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pinia/2.0.22/pinia.iife.js"></script>
+
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        .table-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container my-5">
+
+        <div id="app">
+            <navbar-component></navbar-component>
+            <cart-component></cart-component>
+            <products-component></products-component>
+            <toast-component></toast-component>
+        </div>
+
+    </div>
+
+    <script type="module">
+
+        const { createApp } = Vue;
+        const { createPinia } = Pinia;
+
+        import NavbarComponent from './components/NavbarComponent.js';
+        import CartComponent from './components/CartComponent.js';
+        import ProductsComponent from './components/ProductsComponent.js';
+        import ToastComponent from './components/ToastComponent.js';
+
+        const app = createApp({
+            components: {
+                NavbarComponent,
+                CartComponent,
+                ProductsComponent,
+                ToastComponent
+            },
+            setup() {
+
+
+
+                return {
+
+                }
+            },
+        })
+
+        const pinia = Pinia.createPinia();
+        app.use(pinia);
+
+        app.mount('#app');
+
+    </script>
+
+</body>
+
+</html>
