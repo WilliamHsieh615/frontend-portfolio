@@ -13,16 +13,6 @@
                 "repoUrl": "https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project1-1"
             },
             {
-                "name": "名片設計練習",
-                "description": "以多邊形設計呈現個人名片版型，訓練排版與美感",
-                "technology": [
-                    "HTML",
-                    "CSS"
-                ],
-                "previewUrl": "https://williamhsieh615.github.io/frontend-portfolio/Project1-2/index.html",
-                "repoUrl": "https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project1-2"
-            },
-            {
                 "name": "七逃旅遊網",
                 "description": "提供旅遊行程介紹與旅行說明會預約功能，使用者可選擇行程、月份並填寫參加資訊",
                 "technology": [
@@ -30,8 +20,8 @@
                     "CSS",
                     "SCSS"
                 ],
-                "previewUrl": "https://williamhsieh615.github.io/frontend-portfolio/Project1-3/index.html",
-                "repoUrl": "https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project1-3"
+                "previewUrl": "https://williamhsieh615.github.io/frontend-portfolio/Project1-2/index.html",
+                "repoUrl": "https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project1-2"
             },
             {
                 "name": "畫廊展示頁",
@@ -40,8 +30,8 @@
                     "HTML",
                     "CSS"
                 ],
-                "previewUrl": "https://williamhsieh615.github.io/frontend-portfolio/Project1-4/index.html",
-                "repoUrl": "https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project1-4"
+                "previewUrl": "https://williamhsieh615.github.io/frontend-portfolio/Project1-3/index.html",
+                "repoUrl": "https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project1-3"
             },
             {
                 "name": "時空之門｜視差動畫展示頁",
@@ -51,8 +41,8 @@
                     "CSS",
                     "SCSS"
                 ],
-                "previewUrl": "https://williamhsieh615.github.io/frontend-portfolio/Project1-5/index.html",
-                "repoUrl": "https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project1-5"
+                "previewUrl": "https://williamhsieh615.github.io/frontend-portfolio/Project1-4/index.html",
+                "repoUrl": "https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project1-4"
             },
             {
                 "name": "送你一道彩虹｜滑鼠互動畫面",
@@ -62,8 +52,8 @@
                     "CSS",
                     "SCSS"
                 ],
-                "previewUrl": "https://williamhsieh615.github.io/frontend-portfolio/Project1-6/index.html",
-                "repoUrl": "https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project1-6"
+                "previewUrl": "https://williamhsieh615.github.io/frontend-portfolio/Project1-5/index.html",
+                "repoUrl": "https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project1-5"
             }
         ]
     },

@@ -1,131 +1,56 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>畫廊展示</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <title>時空之門</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
-
 <body>
 
     <div class="container">
-        <!-- 畫廊一 -->
-        <section class="panel-manager" id="up-to-1">
-            <div class="scroll-container">
-                <div class="panel gallery" style="background-color: #ffadad;" id="gallery-1_1">
-                    <h2>畫廊展示一</h2>
-                    <a href="#gallery-1_2" class="right"><span>向左滑動瀏覽</span><i class="fa-solid fa-arrow-right-long"></i></a>
-                    <a href="#down-to-2" class="down"><span>向下滑動進入第二畫廊</span><i class="fa-solid fa-angle-down"></i></a>
-                </div>
-                <div class="panel gallery" style="background-color: #ffd6a5;" id="gallery-1_2">
-                    <a href="#gallery-1_1" class="scroll-btn-left"><i class="fa-solid fa-circle-arrow-left"></i></a>
-                    <a href="#gallery-1_3" class="scroll-btn-right"><i class="fa-solid fa-circle-arrow-right"></i></a>
-                    <img class="gallery-image" src="https://picsum.photos/800/600?random=1" alt="藝術作品1">
-                    <div class="image-caption">藝術作品 #1</div>
-                </div>
-                <div class="panel gallery" style="background-color: #caffbf;" id="gallery-1_3">
-                    <a href="#gallery-1_2" class="scroll-btn-left"><i class="fa-solid fa-circle-arrow-left"></i></a>
-                    <a href="#gallery-1_4" class="scroll-btn-right"><i class="fa-solid fa-circle-arrow-right"></i></a>
-                    <img class="gallery-image" src="https://picsum.photos/800/600?random=2" alt="藝術作品2">
-                    <div class="image-caption">藝術作品 #2</div>
-                </div>
-                <div class="panel gallery" style="background-color: #9bf6ff;" id="gallery-1_4">
-                    <a href="#gallery-1_3" class="scroll-btn-left"><i class="fa-solid fa-circle-arrow-left"></i></a>
-                    <img class="gallery-image" src="https://picsum.photos/800/600?random=3" alt="藝術作品3">
-                    <div class="image-caption">藝術作品 #3</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 畫廊二 -->
-        <section class="panel-manager" id="down-to-2">
-            <div class="scroll-container">
-                <div class="panel gallery" style="background-color: #ffd6a5;" id="gallery-2_1">
-                    <h2>畫廊展示二</h2>
-                    <a href="#gallery-2_2" class="right"><span>向左滑動瀏覽</span><i class="fa-solid fa-arrow-right-long"></i></a>
-                    <a href="#down-to-3" class="down"><span>向下滑動進入第三畫廊</span><i class="fa-solid fa-angle-down"></i></a>
-                </div>
-                <div class="panel gallery" style="background-color: #caffbf;" id="gallery-2_2">
-                    <a href="#gallery-2_1" class="scroll-btn-left"><i class="fa-solid fa-circle-arrow-left"></i></a>
-                    <a href="#gallery-2_3" class="scroll-btn-right"><i class="fa-solid fa-circle-arrow-right"></i></a>
-                    <img class="gallery-image" src="https://picsum.photos/800/600?random=4" alt="藝術作品1">
-                    <div class="image-caption">藝術作品 #1</div>
-                </div>
-                <div class="panel gallery" style="background-color: #9bf6ff;" id="gallery-2_3">
-                    <a href="#gallery-2_2" class="scroll-btn-left"><i class="fa-solid fa-circle-arrow-left"></i></a>
-                    <a href="#gallery-2_4" class="scroll-btn-right"><i class="fa-solid fa-circle-arrow-right"></i></a>
-                    <img class="gallery-image" src="https://picsum.photos/800/600?random=5" alt="藝術作品2">
-                    <div class="image-caption">藝術作品 #2</div>
-                </div>
-                <div class="panel gallery" style="background-color: #ffadad;" id="gallery-2_4">
-                    <a href="#gallery-2_3" class="scroll-btn-left"><i class="fa-solid fa-circle-arrow-left"></i></a>
-                    <img class="gallery-image" src="https://picsum.photos/800/600?random=6" alt="藝術作品3">
-                    <div class="image-caption">藝術作品 #3</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 畫廊三 -->
-        <section class="panel-manager" id="down-to-3">
-            <div class="scroll-container">
-                <div class="panel gallery" style="background-color: #caffbf;" id="gallery-3_1">
-                    <h2>畫廊展示三</h2>
-                    <a href="#gallery-3_2" class="right"><span>向左滑動瀏覽</span><i class="fa-solid fa-arrow-right-long"></i></a>
-                    <a href="#down-to-4" class="down"><span>向下滑動進入第四畫廊</span><i class="fa-solid fa-angle-down"></i></a>
-                </div>
-                <div class="panel gallery" style="background-color: #9bf6ff;" id="gallery-3_2">
-                    <a href="#gallery-3_1" class="scroll-btn-left"><i class="fa-solid fa-circle-arrow-left"></i></a>
-                    <a href="#gallery-3_3" class="scroll-btn-right"><i class="fa-solid fa-circle-arrow-right"></i></a>
-                    <img class="gallery-image" src="https://picsum.photos/800/600?random=7" alt="藝術作品1">
-                    <div class="image-caption">藝術作品 #1</div>
-                </div>
-                <div class="panel gallery" style="background-color: #ffadad;" id="gallery-3_3">
-                    <a href="#gallery-3_2" class="scroll-btn-left"><i class="fa-solid fa-circle-arrow-left"></i></a>
-                    <a href="#gallery-3_4" class="scroll-btn-right"><i class="fa-solid fa-circle-arrow-right"></i></a>
-                    <img class="gallery-image" src="https://picsum.photos/800/600?random=8" alt="藝術作品2">
-                    <div class="image-caption">藝術作品 #2</div>
-                </div>
-                <div class="panel gallery" style="background-color: #ffd6a5;" id="gallery-3_4">
-                    <a href="#gallery-3_3" class="scroll-btn-left"><i class="fa-solid fa-circle-arrow-left"></i></a>
-                    <img class="gallery-image" src="https://picsum.photos/800/600?random=9" alt="藝術作品3">
-                    <div class="image-caption">藝術作品 #3</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 畫廊四 -->
-        <section class="panel-manager" id="down-to-4">
-            <div class="scroll-container">
-                <div class="panel gallery" style="background-color: #9bf6ff;" id="gallery-4_1">
-                    <a href="#up-to-1" class="up"><i class="fa-solid fa-angles-up"></i><span>回到第一畫廊</span></a>
-                    <h2>畫廊展示四</h2>
-                    <p>最後一間畫廊</p>
-                    <a href="#gallery-4_2" class="right"><span>向左滑動瀏覽</span><i class="fa-solid fa-arrow-right-long"></i></a>
-                </div>
-                <div class="panel gallery" style="background-color: #ffadad;" id="gallery-4_2">
-                    <a href="#gallery-4_1" class="scroll-btn-left"><i class="fa-solid fa-circle-arrow-left"></i></a>
-                    <a href="#gallery-4_3" class="scroll-btn-right"><i class="fa-solid fa-circle-arrow-right"></i></a>
-                    <img class="gallery-image" src="https://picsum.photos/800/600?random=10" alt="藝術作品1">
-                    <div class="image-caption">藝術作品 #1</div>
-                </div>
-                <div class="panel gallery" style="background-color: #ffd6a5;" id="gallery-4_3">
-                    <a href="#gallery-4_2" class="scroll-btn-left"><i class="fa-solid fa-circle-arrow-left"></i></a>
-                    <a href="#gallery-4_4" class="scroll-btn-right"><i class="fa-solid fa-circle-arrow-right"></i></a>
-                    <img class="gallery-image" src="https://picsum.photos/800/600?random=11" alt="藝術作品2">
-                    <div class="image-caption">藝術作品 #2</div>
-                </div>
-                <div class="panel gallery" style="background-color: #caffbf;" id="gallery-4_4">
-                    <a href="#gallery-4_3" class="scroll-btn-left"><i class="fa-solid fa-circle-arrow-left"></i></a>
-                    <img class="gallery-image" src="https://picsum.photos/800/600?random=12" alt="藝術作品3">
-                    <div class="image-caption">藝術作品 #3</div>
-                </div>
-            </div>
-        </section>
-    </div>
+        <div class="box box1 animation-1"></div>
+        <div class="box box2 animation-2"></div>
+        <div class="box box3 animation-3"></div>
+        <div class="box box4 animation-4"></div>
+        <div class="box box5 animation-5"></div>
+        <div class="box box6 animation-6"></div>
+        <div class="box box7 animation-7"></div>
+        <div class="box box8 animation-8"></div>
+        <div class="box box9 animation-9"></div>
+        <div class="box box10 animation-10"></div>
+        <div class="box box11 animation-11"></div>
+        <div class="box box12 animation-12"></div>
+        <div class="box box13 animation-13"></div>
+        <div class="box box14 animation-14"></div>
+        <div class="box box15 animation-15"></div>
+        <div class="box box16 animation-16"></div>
+        <div class="box box17 animation-17"></div>
+        <div class="box box18 animation-18"></div>
+        <div class="box box19 animation-19"></div>
+        <div class="box box20 animation-20"></div>
+        <div class="box box21 animation-21"></div>
+        <div class="box box22 animation-22"></div>
+        <div class="box box23 animation-23"></div>
+        <div class="box box24 animation-24"></div>
+        <div class="box box25 animation-25"></div>
+        <div class="box box26 animation-26"></div>
+        <div class="box box27 animation-27"></div>
+        <div class="box box28 animation-28"></div>
+        <div class="box box29 animation-29"></div>
+        <div class="box box30 animation-30"></div>
+        <div class="box box31 animation-31"></div>
+        <div class="box box32 animation-32"></div>
+        <div class="box box33 animation-33"></div>
+        <div class="box box34 animation-34"></div>
+        <div class="box box35 animation-35"></div>
+        <div class="box box36 animation-36"></div>
+        <div class="box box37 animation-37"></div>
+        <div class="box box38 animation-38"></div>
+        <div class="box box39 animation-39"></div>
+        <div class="box box40 animation-40"></div>
+        <div class="box box41 animation-41"></div>
+</div>
     
 </body>
-
 </html>

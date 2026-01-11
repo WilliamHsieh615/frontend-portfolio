@@ -1,0 +1,84 @@
+$color-primary: blue;
+$length: 10;
+
+@keyframes fade {
+    0% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+@mixin gradient-boxes($color-primary, $length) {
+
+    // 1 ~ 10 : darken(50%) ~ darken(5%
+    @for $i from 1 through $length {
+        .box#{$i} {
+            background: darken($color-primary, ($length + 1 - $i) * 5%);
+        }
+    }
+
+    // 11 ~ 20 : lighten(0%) ~ lighten(45%)
+    @for $i from ($length + 1) through ($length * 2) {
+        .box#{$i} {
+            background: lighten($color-primary, ($i - $length - 1) * 5%);
+        }
+    }
+
+    // 21 ~ 30 : lighten(50%)~lighten(5%)
+    @for $i from ($length * 2 + 1) through ($length * 3) {
+        .box#{$i} {
+            background: lighten($color-primary, (($length * 3 + 1) - $i) * 5%);
+        }
+    }
+
+    // 31 ~ 41 : darken(0%) ~ darken(50%)
+    @for $i from ($length * 3 + 1) through ($length * 4 + 1) {
+        .box#{$i} {
+            background: darken($color-primary, ($i - ($length * 3 + 1)) * 5%);
+        }
+    }
+}
+
+@mixin wave-animation($length) {
+    @for $i from 1 through ($length * 2 + 1) {
+        .animation-#{$i} {
+            animation: fade 3s ease-in-out infinite;
+            // 1 ~ 21 往內延遲
+            animation-delay: 0.1s * ($i - 1);
+        }
+    }
+    @for $i from ($length * 2 + 1) through ($length * 4 + 1) {
+        .animation-#{$i} {
+            animation: fade 3s ease-in-out infinite;
+            // 21 ~ 41反向延遲
+            animation-delay: -0.1s * ($i - ($length * 4 + 1));
+        }
+    }
+}
+
+body {
+    background: #000;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 70vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+}
+
+.box {
+    width: 100%;
+}
+
+@include gradient-boxes($color-primary, $length);
+@include wave-animation($length);

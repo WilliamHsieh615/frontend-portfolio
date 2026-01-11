@@ -1,3 +1,108 @@
+/* ====================<< Mode >>==================== */
+/* ========== CSS Reset Start (Meyer + Custom) ========== */
+/* --- Reset default styles for common HTML elements --- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* --- Ensure HTML5 elements are block-level --- */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* --- Set base line-height for body --- */
+body {
+  line-height: 1;
+}
+
+/* --- Remove default list styling --- */
+ol, ul {
+  list-style: none;
+}
+
+/* --- Remove default quote styling --- */
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: "";
+  content: none;
+}
+
+/* --- Reset table spacing --- */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ========== CSS Reset End ========== */
+/* ========== Basic Utility Styles ========== */
+/* --- Set font-family for body --- */
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+}
+
+/* --- Remove underline and default link color --- */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --- Responsive image scaling --- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- Remove form element default styles --- */
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* --- Show pointer cursor on buttons --- */
+button {
+  cursor: pointer;
+}
+
+/* --- Use border-box for all elements to include padding/border in size --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ========== Debug Tools (for development only) ========== */
+/* --- Add 1px outline to all elements for layout debugging --- */
+/* ====================<< Mode >>==================== */
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
 @keyframes fade {
   0% {
     opacity: 0.3;
@@ -9,393 +114,167 @@
     opacity: 0.3;
   }
 }
-body {
-  background: #000;
-  padding: 0;
-  margin: 0;
-}
-
-.container {
-  width: 70vw;
+.space {
+  max-width: 100vw;
   height: 100vh;
   margin: 0 auto;
-  display: flex;
+  position: relative;
+  transform: translateY(20%);
 }
-
-.box {
+.space::after {
+  content: "";
+  display: block;
+  background: rgb(255, 255, 255);
+  position: absolute;
   width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
 }
 
-.box1 {
-  background: black;
+.circle-position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.box2 {
-  background: #00001a;
+.circle1 {
+  width: 900px;
+  height: 900px;
 }
 
-.box3 {
-  background: #000033;
+.circle2 {
+  width: 800px;
+  height: 800px;
 }
 
-.box4 {
-  background: #00004d;
+.circle3 {
+  width: 700px;
+  height: 700px;
 }
 
-.box5 {
-  background: #000066;
+.circle4 {
+  width: 600px;
+  height: 600px;
 }
 
-.box6 {
-  background: navy;
+.circle5 {
+  width: 500px;
+  height: 500px;
 }
 
-.box7 {
-  background: #000099;
+.circle6 {
+  width: 400px;
+  height: 400px;
 }
 
-.box8 {
-  background: #0000b3;
+.circle7 {
+  width: 300px;
+  height: 300px;
 }
 
-.box9 {
-  background: #0000cc;
+.circle-color1 {
+  border: 50px solid rgba(255, 0, 0, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
-.box10 {
-  background: #0000e6;
+.circle-color2 {
+  border: 50px solid rgba(255, 165, 0, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
-.box11 {
-  background: blue;
+.circle-color3 {
+  border: 50px solid rgba(255, 255, 0, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
-.box12 {
-  background: #1a1aff;
+.circle-color4 {
+  border: 50px solid rgba(0, 128, 0, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
-.box13 {
-  background: #3333ff;
+.circle-color5 {
+  border: 50px solid rgba(0, 0, 255, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
-.box14 {
-  background: #4d4dff;
+.circle-color6 {
+  border: 50px solid rgba(75, 0, 130, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
-.box15 {
-  background: #6666ff;
+.circle-color7 {
+  border: 50px solid rgba(238, 130, 238, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
-.box16 {
-  background: #8080ff;
-}
-
-.box17 {
-  background: #9999ff;
-}
-
-.box18 {
-  background: #b3b3ff;
-}
-
-.box19 {
-  background: #ccccff;
-}
-
-.box20 {
-  background: #e6e6ff;
-}
-
-.box21 {
-  background: white;
-}
-
-.box22 {
-  background: #e6e6ff;
-}
-
-.box23 {
-  background: #ccccff;
-}
-
-.box24 {
-  background: #b3b3ff;
-}
-
-.box25 {
-  background: #9999ff;
-}
-
-.box26 {
-  background: #8080ff;
-}
-
-.box27 {
-  background: #6666ff;
-}
-
-.box28 {
-  background: #4d4dff;
-}
-
-.box29 {
-  background: #3333ff;
-}
-
-.box30 {
-  background: #1a1aff;
-}
-
-.box31 {
-  background: blue;
-}
-
-.box32 {
-  background: #0000e6;
-}
-
-.box33 {
-  background: #0000cc;
-}
-
-.box34 {
-  background: #0000b3;
-}
-
-.box35 {
-  background: #000099;
-}
-
-.box36 {
-  background: navy;
-}
-
-.box37 {
-  background: #000066;
-}
-
-.box38 {
-  background: #00004d;
-}
-
-.box39 {
-  background: #000033;
-}
-
-.box40 {
-  background: #00001a;
-}
-
-.box41 {
-  background: black;
-}
-
-.animation-1 {
+.circle-animation-1 {
   animation: fade 3s ease-in-out infinite;
   animation-delay: 0s;
+  cursor: pointer;
+}
+.circle-animation-1:hover {
+  animation: none;
 }
 
-.animation-2 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 0.1s;
-}
-
-.animation-3 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 0.2s;
-}
-
-.animation-4 {
+.circle-animation-2 {
   animation: fade 3s ease-in-out infinite;
   animation-delay: 0.3s;
+  cursor: pointer;
+}
+.circle-animation-2:hover {
+  animation: none;
 }
 
-.animation-5 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 0.4s;
-}
-
-.animation-6 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 0.5s;
-}
-
-.animation-7 {
+.circle-animation-3 {
   animation: fade 3s ease-in-out infinite;
   animation-delay: 0.6s;
+  cursor: pointer;
+}
+.circle-animation-3:hover {
+  animation: none;
 }
 
-.animation-8 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 0.7s;
-}
-
-.animation-9 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 0.8s;
-}
-
-.animation-10 {
+.circle-animation-4 {
   animation: fade 3s ease-in-out infinite;
   animation-delay: 0.9s;
+  cursor: pointer;
+}
+.circle-animation-4:hover {
+  animation: none;
 }
 
-.animation-11 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 1s;
-}
-
-.animation-12 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 1.1s;
-}
-
-.animation-13 {
+.circle-animation-5 {
   animation: fade 3s ease-in-out infinite;
   animation-delay: 1.2s;
+  cursor: pointer;
+}
+.circle-animation-5:hover {
+  animation: none;
 }
 
-.animation-14 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 1.3s;
-}
-
-.animation-15 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 1.4s;
-}
-
-.animation-16 {
+.circle-animation-6 {
   animation: fade 3s ease-in-out infinite;
   animation-delay: 1.5s;
+  cursor: pointer;
+}
+.circle-animation-6:hover {
+  animation: none;
 }
 
-.animation-17 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 1.6s;
-}
-
-.animation-18 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 1.7s;
-}
-
-.animation-19 {
+.circle-animation-7 {
   animation: fade 3s ease-in-out infinite;
   animation-delay: 1.8s;
+  cursor: pointer;
 }
-
-.animation-20 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 1.9s;
-}
-
-.animation-21 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 2s;
-}
-
-.animation-21 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 2s;
-}
-
-.animation-22 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 1.9s;
-}
-
-.animation-23 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 1.8s;
-}
-
-.animation-24 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 1.7s;
-}
-
-.animation-25 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 1.6s;
-}
-
-.animation-26 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 1.5s;
-}
-
-.animation-27 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 1.4s;
-}
-
-.animation-28 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 1.3s;
-}
-
-.animation-29 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 1.2s;
-}
-
-.animation-30 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 1.1s;
-}
-
-.animation-31 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 1s;
-}
-
-.animation-32 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 0.9s;
-}
-
-.animation-33 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 0.8s;
-}
-
-.animation-34 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 0.7s;
-}
-
-.animation-35 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 0.6s;
-}
-
-.animation-36 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 0.5s;
-}
-
-.animation-37 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 0.4s;
-}
-
-.animation-38 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 0.3s;
-}
-
-.animation-39 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 0.2s;
-}
-
-.animation-40 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 0.1s;
-}
-
-.animation-41 {
-  animation: fade 3s ease-in-out infinite;
-  animation-delay: 0s;
+.circle-animation-7:hover {
+  animation: none;
 }/*# sourceMappingURL=style.css.map */
