@@ -4,11 +4,10 @@
 | 編號 | 專案名稱 | 專案簡介 | 技術使用 | Demo 連結 | GitHub 原始碼 |
 |------|-----------|--------------------------------------------------|-------------------------------------------|------------------|-------------------|
 | 1 | 六角學院形象官網 | 設計一頁式企業形象官網，展示品牌風格與服務內容 | HTML、CSS | [🔗 作品](https://williamhsieh615.github.io/frontend-portfolio/Project1-1/index.html) | [🔗 原始碼](https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project1-1) |
-| 2 | 名片設計練習 | 以多邊形設計呈現個人名片版型，訓練排版與美感 | HTML、CSS | [🔗 作品](https://williamhsieh615.github.io/frontend-portfolio/Project1-2/index.html) | [🔗 原始碼](https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project1-2) |
-| 3 | 七逃旅遊網 | 提供旅遊行程介紹與旅行說明會預約功能，使用者可選擇行程、月份並填寫參加資訊 | HTML、CSS、SCSS | [🔗 作品](https://williamhsieh615.github.io/frontend-portfolio/Project1-3/index.html) | [🔗 原始碼](https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project1-3) |
-| 4 | 畫廊展示頁 | 實作圖片畫廊與燈箱效果，提升圖片展示互動性 | HTML、CSS | [🔗 作品](https://williamhsieh615.github.io/frontend-portfolio/Project1-4/index.html) | [🔗 原始碼](https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project1-4) |
-| 5 | 時空之門｜視差動畫展示頁 | 使用 SCSS 製作視差滾動與動畫特效，打造創意互動頁面 | HTML、CSS（SCSS） | [🔗 作品](https://williamhsieh615.github.io/frontend-portfolio/Project1-5/index.html) | [🔗 原始碼](https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project1-5) |
-| 6 | 送你一道彩虹｜滑鼠互動畫面 | 以彩虹為主題設計動畫與滑鼠互動視覺效果 | HTML、CSS（SCSS） | [🔗 作品](https://williamhsieh615.github.io/frontend-portfolio/Project1-6/index.html) | [🔗 原始碼](https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project1-6) |
+| 2 | 七逃旅遊網 | 提供旅遊行程介紹與旅行說明會預約功能，使用者可選擇行程、月份並填寫參加資訊 | HTML、CSS、SCSS | [🔗 作品](https://williamhsieh615.github.io/frontend-portfolio/Project1-2/index.html) | [🔗 原始碼](https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project1-2) |
+| 3 | 畫廊展示頁 | 實作圖片畫廊與燈箱效果，提升圖片展示互動性 | HTML、CSS | [🔗 作品](https://williamhsieh615.github.io/frontend-portfolio/Project1-3/index.html) | [🔗 原始碼](https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project1-3) |
+| 4 | 時空之門｜視差動畫展示頁 | 使用 SCSS 製作視差滾動與動畫特效，打造創意互動頁面 | HTML、CSS（SCSS） | [🔗 作品](https://williamhsieh615.github.io/frontend-portfolio/Project1-4/index.html) | [🔗 原始碼](https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project1-4) |
+| 5 | 送你一道彩虹｜滑鼠互動畫面 | 以彩虹為主題設計動畫與滑鼠互動視覺效果 | HTML、CSS（SCSS） | [🔗 作品](https://williamhsieh615.github.io/frontend-portfolio/Project1-5/index.html) | [🔗 原始碼](https://github.com/WilliamHsieh615/frontend-portfolio/tree/main/Project1-5) |
 
 ## JavaScript 作品
 | 編號 | 專案名稱 | 專案簡介 | 技術使用 | Demo 連結 | GitHub 原始碼 |
